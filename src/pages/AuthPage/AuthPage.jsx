@@ -8,8 +8,7 @@ export default function AuthPage({ setUser }) {
   return (
    
     <main className="auth-page">
-       <div>SEI</div>
-    <div>CAFE</div>
+       <div>QUICK NOTES</div>
         <button className="not-btn" onClick={() => setShowForm(!showForm)} >
         {showForm ? "SIGN UP" : "SIGN IN"}
         </button>

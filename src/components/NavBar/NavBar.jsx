@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as userService from '../../utilities/users-service';
+import Button from 'react-bootstrap/Button';
 
 export default function NavBar({ user, setUser }) {
   function handleLogOut() {
@@ -9,12 +10,9 @@ export default function NavBar({ user, setUser }) {
 
   return (
     <nav>
-      <Link to="/notes">Notes</Link>
-      &nbsp; | &nbsp;
-      <Link to="/notes/new">New Notes</Link>
+       <span>Welcome, {user.name}</span>
       &nbsp;&nbsp;
-      <span>Welcome, {user.name}</span>
-      &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
+      <Button Link to="" onClick={handleLogOut} >LOG OUT</Button> 
     </nav>
   );
 }
