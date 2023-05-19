@@ -3,8 +3,8 @@ const Schema = mongoose.Schema;
 
 const notesSchema = new Schema(
   {
-    text: { type: String, required },
-    user: { type: ObjectId, required },
+    text: { type: String, required: true },
+    user: { type: Schema.Types.ObjectId, required: true, ref: "User" },
   },
   {
     timestamps: true,

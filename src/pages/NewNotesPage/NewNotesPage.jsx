@@ -1,5 +1,27 @@
-export default function NewOrderPage() {
+import NewNotesForm from '../../components/NewNotesForm/NotesForm';
+
+
+export default function NewNotesPage({notes}) {
   return (
-    <h1>New Note Page</h1>
+    <div>
+      <NewNotesForm />
+    </div>
+   
   );
 }
+
+
+
+// export default function NewNotesPage({notes}) {
+
+
+//   return (
+//     <>
+//      {notes.map((note) => (
+//          <PreviousNotes note={note} />   
+//              ))}
+//     <h1>New Note Page</h1>
+//  
+//     </>
+//   );
+// }
